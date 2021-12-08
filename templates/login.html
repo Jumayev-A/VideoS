@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+<head>
+  <title>Okuw Töleg Giriş</title>
+  <link rel="stylesheet" href="{% static 'css/loginstyle.css' %}">
+</head>
+<body style="background-image: url('{% static 'img/background.png' %}');">
+  <center>
+  <div class="loginbox">
+    <div id="logo">
+      <img src="{% static 'img/logo.png' %}">
+    </div>
+    <form action="{% url 'login' %}" method="post">{% csrf_token %}
+      <input type="text" name="username" placeholder="Ulanyjy ady">
+      <input type="password" name="password" placeholder="Açar sözü"> <!--gozjaagaz bolsa kem dal-->
+      <button style="background-color: #E71C39;" name="login">Giriş</button>
+      </form>
+  </div>
+</center>
+
+</body>
+</html>
