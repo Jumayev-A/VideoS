@@ -4,5 +4,5 @@
 ##### python manage.py runserver
 ##### localhost:8000
 ##### Admin Panel    
-#####user: admin
-#####password: admin
+##### user: admin
+##### password: admin
